@@ -1,0 +1,38 @@
+body {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	margin: 0; /* Remove default margin */
+	flex-direction: column; /* Display children in a column */
+	background-color: #363535;
+	font-family: Verdana;
+}
+
+h1.title {
+    font-size: 80px;
+    color: white;
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+.logo {
+	width: 100px;
+	height: auto;
+	margin-top: 40px;
+}
+
+.statement {
+	width: 600px;
+	color: white;
+	text-align: center;
+}
+
+h1.subtitle {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 20px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
