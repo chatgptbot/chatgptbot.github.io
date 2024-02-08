@@ -40,6 +40,25 @@ p {
 	line-height: 1.5;
 }
 
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #00000000;
+}
+
+/* Optional: Handle when hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
 @media screen and (max-width: 600px) {
 	h1.title {
 		font-size: 50px;
