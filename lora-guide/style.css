@@ -2,7 +2,6 @@ body {
     display: flex;
     align-items: center;
     height: 100vh;
-    margin: 0; /* Remove default margin */
     flex-direction: column; /* Display children in a column */
     background-color: #363535;
     font-family: Verdana;
@@ -11,6 +10,10 @@ body {
 img {
     margin: 10px;
     border-radius: 10px;
+}
+
+.showcase {
+    text-align: center;
 }
 
 .note {
@@ -57,20 +60,22 @@ h1.title {
     font-size: 50px;
     color: white;
     margin-top: 20px; /* Adjust this value as needed */
+    text-align: center;
 }
 
 .statement {
-    max-width: 800px; /* Adjust the width as needed */
     color: white;
     text-align: center;
     margin-right: 20px; /* Adjust the right margin as needed */
     margin-left: 20px; /* Adjust the left margin as needed */
+    max-width: 700px;
 }
 
 
-h1.subtitle {
+.subtitle {
     font-size: 40px;
     margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -85,12 +90,42 @@ p {
     line-height: 1.5;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #00000000;
+}
+
+/* Optional: Handle when hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
 @media screen and (max-width: 600px) {
     h1.title {
-        font-size: 50px;
+        font-size: 30px;
     }
 
-    h1.subtitle {
+    .statement {
+        max-width: 400px;
+    }
+
+    img {
+        max-width: 400px;
+    }
+
+    a.civitai {
+        font-size: 15px;
+    }
+
+    .subtitle {
         font-size: 30px;
     }
 
@@ -101,10 +136,15 @@ p {
 
 @media screen and (max-width: 400px) {
     h1.title {
-        font-size: 30px;
+        font-size: 25px;
     }
 
-    h1.subtitle {
+    .statement {
+        max-width: 350px;
+    }
+
+    
+    .subtitle {
         font-size: 20px;
     }
 
