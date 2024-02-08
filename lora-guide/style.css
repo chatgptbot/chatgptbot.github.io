@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+    flex-direction: column; /* Display children in a column */
+    background-color: #363535;
+    font-family: Verdana;
+}
+
+img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.note {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+a.civitai {
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    background-color: #444242;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a.civitai:hover {
+    background-color: #555;
+}
+
+a.civitai::before {
+    content: url('https://cdn.discordapp.com/attachments/1157621562221002754/1204789392044982343/images_1.png?ex=65d6028e&is=65c38d8e&hm=4b900c4018982175105af23ff647869134644222f40337965bc4be847f7f632b&');
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+p.requirements {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10px;
+}
+
+h1.title {
+    font-size: 50px;
+    color: white;
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+.statement {
+    max-width: 800px; /* Adjust the width as needed */
+    color: white;
+    text-align: center;
+    margin-right: 20px; /* Adjust the right margin as needed */
+    margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+
+h1.subtitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    h1.title {
+        font-size: 50px;
+    }
+
+    h1.subtitle {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1.title {
+        font-size: 30px;
+    }
+
+    h1.subtitle {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
